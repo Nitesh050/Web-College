@@ -1,0 +1,22 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(118, 113, 113);
+
+}
+
+
+h1{
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid blue;
+    margin: 0px;
+    
+    
+}
+.logo{
+    text-align: center;
+    margin-top: 20px;
+    
+}
