@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App with Timer</title>
+    <link rel="stylesheet" href="quizstyles.css">
+</head>
+<body>
+
+<div class="quizBox">
+
+    <h2>Simple Quiz App</h2>
+
+    <div class="timerBox">
+        Time Left: <span id="timeRemainingDisplay">60</span>s
+    </div>
+
+    <form id="quizForm">
+
+        <div class="singleQuestion" data-question="0">
+            <p>1. What does HTML stand for?</p>
+            <label><input type="radio" name="question0" value="a"> Hyper Text Markup Language</label>
+            <label><input type="radio" name="question0" value="b"> High Tech Modern Language</label>
+            <label><input type="radio" name="question0" value="c"> Home Tool Markup Language</label>
+        </div>
+
+        <div class="singleQuestion" data-question="1">
+            <p>2. Which language is used for styling web pages?</p>
+            <label><input type="radio" name="question1" value="a"> HTML</label>
+            <label><input type="radio" name="question1" value="b"> CSS</label>
+            <label><input type="radio" name="question1" value="c"> Python</label>
+        </div>
+
+        <div class="singleQuestion" data-question="2">
+            <p>3. Which is a JavaScript framework?</p>
+            <label><input type="radio" name="question2" value="a"> React</label>
+            <label><input type="radio" name="question2" value="b"> Django</label>
+            <label><input type="radio" name="question2" value="c"> Flask</label>
+        </div>
+
+        <div class="singleQuestion" data-question="3">
+            <p>4. Which tag is used to create a link?</p>
+            <label><input type="radio" name="question3" value="a"> &lt;link&gt;</label>
+            <label><input type="radio" name="question3" value="b"> &lt;a&gt;</label>
+            <label><input type="radio" name="question3" value="c"> &lt;href&gt;</label>
+        </div>
+
+        <div class="singleQuestion" data-question="4">
+            <p>5. Which company developed Java?</p>
+            <label><input type="radio" name="question4" value="a"> Microsoft</label>
+            <label><input type="radio" name="question4" value="b"> Sun Microsystems</label>
+            <label><input type="radio" name="question4" value="c"> Google</label>
+        </div>
+
+        <div class="buttonSection">
+            <button type="button" id="previousQuestionButton">Previous</button>
+            <button type="button" id="nextQuestionButton">Next</button>
+            <button type="button" id="submitQuizButton">Submit</button>
+            <button type="button" id="resetQuizButton">Reset</button>
+        </div>
+
+    </form>
+
+    <div id="finalScoreDisplay"></div>
+
+</div>
+
+<script src="quizscript.js"></script>
+</body>
+</html>
